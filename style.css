@@ -1,0 +1,173 @@
+/* الخطوط */
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* التنقل */
+nav {
+  background-color: #6c5ce7;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffeaa7;
+}
+
+/* الهيدر */
+.hero {
+  background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 0 0 30px 30px;
+}
+
+.hero h2 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* الأقسام */
+.section {
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.1);
+}
+
+.section h3 {
+  color: #6c5ce7;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.skills-list,
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li,
+.projects-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.skills-list li:last-child,
+.projects-list li:last-child {
+  border-bottom: none;
+}
+
+.projects-list li a {
+  color: #6c5ce7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.projects-list li a:hover {
+  text-decoration: underline;
+  color: #341f97;
+}
+
+/* التواصل */
+#contact p {
+  font-size: 1.1rem;
+}
+
+#contact a {
+  color: #6c5ce7;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #020914;
+  text-decoration: underline;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #999;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* تجاوب الشاشة الصغيرة */
+@media (max-width: 600px) {
+  nav .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .section h3 {
+    font-size: 1.4rem;
+  }
+}
+
